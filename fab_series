@@ -1,0 +1,18 @@
+def fibonacci_series(n):
+    a = 0
+    b = 1
+    if n == 0:
+     print(a)
+    elif n == 1:
+     print(a, b)
+    else:
+     print(a, b, end = " ") 
+     for i in range(n-2):
+      c = a + b 
+      a = b 
+      b = c
+
+      print(b, end = " ")
+
+number = int(input("enter the number : "))
+fibonacci_series(number)
